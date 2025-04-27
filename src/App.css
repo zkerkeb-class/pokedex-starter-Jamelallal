@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+/* Logo animé */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,12 +13,13 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #0ed2f7aa); /* bleu turquoise */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #4dd0e1aa); /* vert turquoise */
 }
 
+/* Animation logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +35,33 @@
   }
 }
 
+/* Cartes */
 .card {
   padding: 2em;
+  background: linear-gradient(145deg, #b2fefa, #e0ffb3); /* bleu clair vers vert clair */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Paragraphe de doc */
 .read-the-docs {
-  color: #888;
+  color: #4caf50;
+  font-weight: 500;
+}
+
+/* Boutons dans le thème turquoise-vert-jaune */
+button {
+  background: linear-gradient(to right, #0ed2f7, #a1ffce); /* bleu turquoise à vert clair */
+  border: none;
+  border-radius: 6px;
+  color: #004d40;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #00c6ff, #fef65b); /* bleu plus intense vers jaune vif */
+  color: #004d40;
 }
